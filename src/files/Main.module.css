@@ -1,0 +1,26 @@
+.main_div{
+    background-color: brown;
+    position: absolute;
+    top:40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+.main_text{
+    color:rgb(223, 231, 231);
+    font-size: larger;
+    
+}
+.start_button{
+    width:20%;
+    padding:2%;
+    color: rgb(248, 242, 242);
+    background-color: rgb(183, 203, 114);
+    border: none;
+    font-size:medium;
+}
+.start_button :hover{
+    cursor:pointer;
+}

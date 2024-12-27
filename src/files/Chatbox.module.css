@@ -1,0 +1,132 @@
+/* Main container */
+.chatboxContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.chatboxTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Error message */
+.chatboxError {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Messages container */
+.chatboxMessages {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9fafb;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+/* Each message */
+.chatboxMessage {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.chatboxMessageSent {
+    background-color: #e3f2fd;
+    margin-left: auto;
+    text-align: right;
+}
+
+.chatboxMessageReceived {
+    background-color: #ffffff;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Username */
+.chatboxUsername {
+    font-weight: 600;
+    font-size: 0.775rem;
+    color: #858990;
+}
+
+/* Message content */
+.chatboxContent {
+    color: #303742;
+}
+
+/* Timestamp */
+.chatboxTimestamp {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+/* Input and button container */
+.chatboxInputContainer {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input */
+.chatboxInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.chatboxInput:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+}
+
+/* Send button */
+.chatboxSendBtn {
+    padding: 10px 16px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.chatboxSendBtnDisabled {
+    background-color: #d1d5db;
+    cursor: not-allowed;
+}
+
+.chatboxSendBtnHover:hover:not(.chatboxSendBtnDisabled) {
+    background-color: #2563eb;
+}
+
+/* System messages (User joined/left) */
+.chatboxSystemMessage {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin: 10px 0;
+}
+.chatboxSystemMessageCenter {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin: 10px 0;
+}
