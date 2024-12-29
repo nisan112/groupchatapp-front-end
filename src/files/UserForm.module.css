@@ -20,3 +20,12 @@
     padding: 1%;
     color: rgb(75, 79, 78);
 }
+.errormsg{
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    background-color: rgb(218, 211, 218);
+    padding: 1%;
+}

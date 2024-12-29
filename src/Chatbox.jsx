@@ -44,6 +44,8 @@ const Chatbox = () => {
                 client.connect(
                     {
                       'username':username,
+                      'joineddate': new Date().toISOString(),
+                    
                     },
                     () => {
                         if (mounted) {
@@ -102,14 +104,15 @@ const Chatbox = () => {
     const sendMessage = useCallback(() => {
         if (stompClientRef.current?.connected && input.trim()) {
             const message = {
-                sender: username,
+                datetime: new Date().toISOString(),
                 content: input.trim(),
-                timestamp: new Date().toISOString(),
+                sender: username,
                 type : 'M'
             };
 
             try {
                 stompClientRef.current.send('/app/userMessage', {'username':username}, JSON.stringify(message));
+                console.log('Sent message:', message);
                 setInput('');
             } catch (err) {
                 console.error('Error sending message:', err);
